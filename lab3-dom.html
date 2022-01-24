@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Квиз </title>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+
+<meta name="viewport" content="width=device-width" initial-scale="1"/>
+
+<!-- Latest compiled and minified CSS  --> 
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<form action="lab-3.php" method="post">
+<div style="background-color:lightgrey" > <!-- ZA BOJA NA POZADINSKA SLIKA -->
+<hr>
+<div class="container-fluid" style="background-color:grey"> <!-- ZA KONTEJNER -->
+<hr>
+<img src="php.jpg">
+<marquee direction="right">
+<h1> КВИЗ </h1> </marquee>
+</div>
+<hr>
+
+<div class="container-fluid">
+
+<h3> 1. PHP e скриптен јазик за веб-програмирање кој се користи за развој на...? </h3>
+<input type="radio" name="pr1" value="dinamicni"/> динамични HTML содржини <br> <!-- RADIO BUTTONS -->
+<INPUT TYPE="RADIO" name="pr1" value="staticni"/> статички HTML содржини
+
+<br> <br>
+
+<h3> 2. Извршувањето на PHP кодот е на страната на...? </h3>
+<input type="radio" name="pr2" value="prebaruvac"/> пребарувачот <br>
+<input type="radio" name="pr2" value="web"/> веб-серверот <br>
+<input type="radio" name="pr2" value="bnp"/> серверот за управување на бази на податоци
+<br> <br>
+
+<h3> 3. Со кој знак започнуваат променливите во PHP? </h3>
+<input type="radio" name="pr3" value="eden"/> # <br>
+<input type="radio" name="pr3" value="dva"/> & <br>
+<input type="radio" name="pr3" value="tri"/> $
+<br> <br>
+
+<h3> 4. Кои од следниве променливи се невалидни во PHP? </h3> <!-- za CHECKBOX -->
+<input type="checkbox" name="pr4-1" value="ab"/> ab = 12; <br>
+<input type="checkbox" name="pr4-2" value="as"/> $as = 10; <br>
+<input type="checkbox" name="pr4-3" value="5ab"/> $_5ab = 15; <br>
+<input type="checkbox" name="pr4-4" value="2ab" /> $2ab = 0; <br>
+<br> <br>
+
+<h3> 5. Што ќе испечати следниот израз? </h3> <!-- za TEXTAREA -->
+ <a>  < ? php <br>
+$x="12" + 16; <br> 
+echo ($x); <br>
+? > <br> </a>
+<textarea name="pecati" cols="10" rows="1" > </textarea>
+<br> <br>
+
+<h3> 6. Што ќе испечати следниот израз? </h3>
+<a> < ? php <br>
+$stuff = array("Hi","5"); <br>
+echo $stuff[1], "\n"; <br>
+?> <br> </a>
+<textarea name="odgovor1" cols="10" rows="1" > </textarea>
+<br> <br>
+
+<h3> 7. 
+<select name="pr7">                           
+<option value="a"> print r()  <!-- ZA LIST BOX -->
+<option value="b"> print()
+<option value="c"> var_dump() </select>
+дава поопширен приказ за информации за променливите кај PHP. </h3>
+<br> <br>
+
+<h3> 8. Напишите ги трите видови на коментари одвоени со запирка во PHP? (коментарот да е "rezultat") </h3>
+<textarea name="question"  rows="3" cols="50">   </textarea>
+
+ <!-- //Thisisac++stylecomment/*Thisisamultilinecommentyetanotherlineofcomment*/ #Thisisashell-stylecomment-->
+
+<br> <br>
+
+<h3> 9. Операторот = = = споредува...? </h3>
+<input type="radio" name="pr9" value="tip"/> тип <br>
+<input type="radio" name="pr9" value="tipivr"/> тип и вредност <br> 
+<input type="radio" name="pr9" value="vrednost"/> вредност 
+<br> <br>
+
+<h3> 10. Што ќе испечати следниот израз? </h3>
+
+< ? php <br>
+$x = 6; <br>
+$y = 15 + $x++; <br>
+echo "x is $x and y is $y \n" <br>
+?> 
+<br> <br>
+
+<input type="radio" name="pr10" value="xis7"/> x is 7 and y is 21 <br>
+<input type="radio" name="pr10" value="xis6"/> x is 6 and y is 21 <br>
+<input type="radio" name="pr10" value="xis20"/> x is 7 and y is 20 <br>
+<br> 
+
+
+
+<button type="reset" value="reset">Избриши</button>
+<input type="submit" name="sub" value="Испрати" align="center"> <!-- KOPCE ZA ISPRAKANJE -->
+
+
+</div>
+</form>
+</body>
+</html>
